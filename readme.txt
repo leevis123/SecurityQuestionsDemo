@@ -21,6 +21,7 @@ The SecurityQuestionsDemo project is configured to be the Startup Project for th
 
 Other Notes
 *****************************
-- Due to time constraints, I did not put as much effort into exception handling as I would in a production application. Instead, I relied on the database constraints put in place and the validation logic in code to handle program errors.
+- Due to time constraints, I did not put as much effort into exception handling as I normally would in a production application. Instead, I relied on the database constraints put in place and the validation logic in code to handle program errors.
+- Some code and functions in the solution were a bit overkill, but again, this was done in an effort to show good practices, knowledge, and design.
 
 Thanks for your time and the opportunity!

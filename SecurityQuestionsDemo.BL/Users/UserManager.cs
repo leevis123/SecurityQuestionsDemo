@@ -14,7 +14,7 @@ namespace SecurityQuestionsDemo.BL.Users
         /// Retrieves a User object from the database based on name.
         /// </summary>
         /// <param name="name">The name of the user in the system.</param>
-        /// <returns></returns>
+        /// <returns>A User object if it exists, else null.</returns>
         public static User GetUserByName(string name)
         {
             var user = DataManager.GetUserByName(name);
@@ -35,7 +35,7 @@ namespace SecurityQuestionsDemo.BL.Users
         /// Method for adding a new User.
         /// </summary>
         /// <param name="name">The name of the User.</param>
-        /// <returns>User</returns>
+        /// <returns>A User object.</returns>
         public static User AddNewUser(string name)
         {
             //Add the new user.
@@ -48,7 +48,7 @@ namespace SecurityQuestionsDemo.BL.Users
         /// Method for saving a User's security questions/answers.
         /// </summary>
         /// <param name="user">The User object containing the security questions.</param>
-        /// <returns></returns>
+        /// <returns>A User object.</returns>
         public static User SaveUserSecurityQuestions(User user)
         {
             if (user.SecurityQuestions.Count == 3)

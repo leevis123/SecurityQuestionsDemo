@@ -95,32 +95,6 @@ namespace SecurityQuestionsDemo.DAL
             return user;
         }
 
-        public static List<UserSecurityQuestion> GetUserSecurityQuestions(User user)
-        {
-            List<UserSecurityQuestion> userSecurityQuestions = new List<UserSecurityQuestion>();
-            StringBuilder thisSql = new StringBuilder();
-
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-
-                thisSql.Clear().AppendLine("SELECT *")
-                    .AppendLine("FROM SecurityQuestion");
-
-                using (SQLiteCommand cmd = new SQLiteCommand(thisSql.ToString(), conn))
-                {
-                    SQLiteDataReader dataReader = cmd.ExecuteReader();
-
-                    while (dataReader.Read())
-                    {
-                        //userSecurityQuestions.Add(new SecurityQuestion { Id = Convert.ToInt32(dataReader["Id"]), Question = Convert.ToString(dataReader["Question"]) });
-                    }
-                }
-                conn.Close();
-            }
-            return userSecurityQuestions;
-        }
-
         #region Security Questions
         /// <summary>
         /// Retrieves a list of default SecurityQuestions stored in the database.

@@ -10,6 +10,10 @@ namespace SecurityQuestionsDemo.BL.SecurityQuestions
 {
     public static class SecurityQuestionsManager
     {
+        /// <summary>
+        /// Returns a list of the default security questions from our database.
+        /// </summary>
+        /// <returns>A collection of SecurityQuestion</returns>
         public static List<SecurityQuestion> GetDefaultSecurityQuestions()
         {
             return DataManager.GetDefaultSecurityQuestions();
