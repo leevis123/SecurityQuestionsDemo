@@ -5,7 +5,7 @@ using SecurityQuestionsDemo.BL.Users;
 using SecurityQuestionsDemo.DAL;
 using SecurityQuestionsDemo.Entity;
 
-namespace FactoryDesignPattern
+namespace SecurityQuestionsDemo
 {
     class Program
     {
