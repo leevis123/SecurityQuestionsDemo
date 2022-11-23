@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="SecurityQuestions\" />
+    <Folder Include="Users\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SecurityQuestionsDemo.DAL\SecurityQuestionsDemo.DAL.csproj" />
+    <ProjectReference Include="..\SecurityQuestionsDemo.Entity\SecurityQuestionsDemo.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
