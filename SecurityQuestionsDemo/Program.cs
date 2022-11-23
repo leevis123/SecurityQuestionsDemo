@@ -205,16 +205,16 @@ namespace FactoryDesignPattern
 
                 if (userInput.ToLower() == "y")
                 {
-                    //Save the user's security questions/answers and redirect to PromptForName.
+                    //Save the user's security questions/answers and restart the demo.
                     currentUser.SecurityQuestions = userSecurityQuestions;
                     UserManager.SaveUserSecurityQuestions(currentUser);
-                    PromptUserForName();
+                    DoSecurityQuestionsDemo();
                 }
                 else if (userInput.ToLower() == "n")
                 {
-                    //User declined to save questions/answers. Reset user object and redirect to PromptForName.
+                    //User declined to save questions/answers. Reset user object and restart the demo.
                     currentUser = new User();
-                    PromptUserForName();
+                    DoSecurityQuestionsDemo();
                 }
                 else
                 {
